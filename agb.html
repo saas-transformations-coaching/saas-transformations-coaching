@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGB</title>
+    <link rel="stylesheet" href="style.css">
+ <link rel="icon" type="image/png" href="Images/favcon.png">
+</head>
+
+<body>
+
+<header>
+    <section class="header-links">
+        <section class="logo">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="logo">
+            </a>
+        </section>
+
+        <nav class="desktop-nav">
+            <a href="index.html#uebermich">Über mich</a>
+            <a href="termine.html">Termine</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <nav class="mobile-nav">
+        <a href="index.html#uebermich">Über mich</a>
+        <a href="termine.html">Termine</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+
+<section class="agb-container">
+    <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+
+    <h2>1. Geltungsbereich</h2>
+    <p>Diese AGB gelten für alle Dienstleistungen der Hypnosepraxis sowie für Terminbuchungen über die Website.</p>
+
+    <h2>2. Terminvereinbarung</h2>
+    <p>Termine können online, telefonisch oder per E-Mail vereinbart werden. Eine Buchung ist verbindlich.</p>
+
+    <h2>3. Absagen & Nichterscheinen</h2>
+    <p>Absagen müssen mindestens 24 Stunden vorher erfolgen. Bei kurzfristigen Absagen oder Nichterscheinen kann der volle Betrag verrechnet werden.</p>
+
+    <h2>4. Haftungsausschluss</h2>
+    <p>Hypnose ersetzt keine medizinische oder psychotherapeutische Behandlung. Bei gesundheitlichen Problemen wird empfohlen, vorher einen Arzt zu konsultieren.</p>
+
+    <h2>5. Datenschutz</h2>
+    <p>Alle persönlichen Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.</p>
+
+    <h2>6. Preise & Zahlung</h2>
+    <p>Die aktuellen Preise sind auf der Website ersichtlich. Die Zahlung erfolgt nach der Sitzung.</p>
+
+    <h2>7. Änderungen</h2>
+    <p>Die Praxis behält sich vor, die AGB jederzeit anzupassen. Es gilt die jeweils aktuelle Version.</p>
+</section>
+
+
+<footer>
+    <section class="footer-links">
+        <section class="logo">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="logo">
+            </a>
+        </section>
+
+        <div class="footer-info">
+            <p>Adresse</p>
+            <p>Tel.</p>
+            <p>Email</p>
+        </div>
+
+        <a href="agb.html">AGB</a>
+        <a href="impressum.html">Impressum</a>
+    </section>
+</footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
+hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>

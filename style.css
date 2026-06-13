@@ -1,0 +1,654 @@
+header {
+    background-color:#0E3A40;
+   padding: 1em;
+    
+}
+
+.logo img{
+height: auto;
+width: 20%;
+
+}
+
+/* Fade-In Animation beim Laden */
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+     margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #e9d78c;
+}
+.header-links {
+
+    display: flex;
+    justify-content: space-evenly;
+align-items: center;
+
+}
+/* Navigation Basis */
+.desktop-nav {
+    display: flex;
+    gap: 2em;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #e9d78c;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #0E3A40;
+    padding: 1em;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #0E3A40;
+height: 460px;
+
+}
+
+.footer-links{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+align-items: center;
+top: 20%;
+
+}
+
+.footer-info {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    right: 40%;
+}
+.footer-info p {
+    color: #e9d78c;
+}
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.einleitung  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+padding: 5em;
+padding-bottom: 10%;
+
+
+
+
+}
+.einleitung p {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 50%;
+
+}
+.einleitung-titel {
+    color: #0E3A40;
+}
+
+a:hover {
+    color: white;
+}
+
+.termine-button {
+    position: relative;;
+    background-color: #0E3A40;
+    border-radius: 35px;
+    width: 15%;
+    padding: 10px;
+    bottom: 100px;
+    left: 27%;
+   
+
+
+  
+}
+.termine-button p {
+    display: flex;
+justify-content: center;
+
+}
+
+.uebermich {
+     display: flex;
+    justify-content: center;
+    flex-direction: row;
+padding: 5em;
+padding-bottom: 20%;
+gap: 40px;
+}
+
+.uebermich p {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 50%;
+    position: relative;
+    bottom: 50px;
+  
+}
+
+
+.termine-button:hover {
+    background-color: #e9d78c;
+    color: white;
+}
+.termine-button:hover a {
+  
+    color: white;
+}
+
+
+.uebermich img {
+height: auto;
+width: 40%;
+border-radius: 30px;
+}
+
+.uebermich-titel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  padding-top: 100px;
+  color: #0E3A40;
+}
+
+/* Globaler Hover-Fade für alle klickbaren Elemente */
+a, button, .qa-question, .desktop-nav a, .mobile-nav a, .termine-button {
+    transition: opacity 0.3s ease;
+}
+
+a:hover,
+button:hover,
+.qa-question:hover,
+.desktop-nav a:hover,
+.mobile-nav a:hover,
+.termine-button:hover {
+    opacity: 0.6;
+}
+
+
+
+/* Q&A Section */
+.qa-section {
+    width: 60%;
+    margin: 0 auto;
+    padding: 3em 0;
+    padding-bottom: 100px;
+}
+
+.qa-section h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #0E3A40;
+}
+
+.qa-item {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+
+.qa-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    cursor: pointer;
+    color: #0E3A40;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.qa-question:hover {
+    color: #e9d78c;
+}
+
+.qa-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.qa-answer.open {
+    max-height: 200px;
+    opacity: 1;
+}
+
+
+/* Terminseite */
+.termine-titel {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    color: #0E3A40;
+}
+
+.termine-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 3em 2em 8em 2em;
+    padding-bottom: 200px;
+}
+
+.termin-box {
+    background-color: #0E3A40;
+    padding: 2em;
+    border-radius: 25px;
+    width: 250px;
+    text-align: center;
+    color: #e9d78c;
+    transition: opacity 0.3s ease;
+}
+
+.termin-box h2 {
+    margin-bottom: 10px;
+}
+
+.termin-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e9d78c;
+    color: #0E3A40;
+    border-radius: 20px;
+    transition: opacity 0.3s ease;
+}
+
+/* Kontaktseite */
+.kontakt-titel {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    color: #0E3A40;
+}
+
+.kontakt-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 3em 2em 8em 2em;
+}
+
+.kontakt-info {
+    width: 30%;
+    color: #0E3A40;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.kontakt-formular {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #0E3A40;
+    font-size: 1em;
+}
+
+.kontakt-formular textarea {
+    height: 150px;
+    resize: none;
+}
+
+.kontakt-btn {
+    background-color: #0E3A40;
+    color: #e9d78c;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+/* Kontakt – Google Maps */
+.kontakt-map {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+/* Anmeldeformular */
+.anmeldung-titel {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    color: #0E3A40;
+}
+
+.anmeldung-container {
+    display: flex;
+    justify-content: center;
+    padding: 3em 2em 8em 2em;
+}
+
+.anmeldung-formular {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.anmeldung-formular input,
+.anmeldung-formular select,
+.anmeldung-formular textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #0E3A40;
+    font-size: 1em;
+}
+
+.anmeldung-formular textarea {
+    height: 150px;
+    resize: none;
+}
+
+.anmeldung-btn {
+    background-color: #0E3A40;
+    color: #e9d78c;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Danke-Seite */
+.danke-container {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: #0E3A40;
+}
+
+.danke-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.danke-container p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.danke-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #0E3A40;
+    color: #e9d78c;
+    border-radius: 25px;
+    transition: opacity 0.3s ease;
+}
+
+
+/* 404 Seite */
+.error-container {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: #0E3A40;
+}
+
+.error-container h1 {
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+.error-container p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.error-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0E3A40;
+    color: #e9d78c;
+    border-radius: 25px;
+    transition: opacity 0.3s ease;
+}
+
+
+
+/* AGB & Impressum */
+.agb-container,
+.impressum-container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 70%;
+    margin: 0 auto;
+    color: #0E3A40;
+}
+
+.agb-container h1,
+.impressum-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.agb-container h2,
+.impressum-container h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- */
+/* RESPONSIVE BREAKPOINT */
+/* ---------------------- */
+
+@media (max-width: 900px) {
+
+    /* Header Layout */
+    .header-links {
+        justify-content: space-between;
+        padding: 0 1em;
+    }
+
+    /* Desktop-Navigation ausblenden auf Mobile/Tablet */
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Hamburger sichtbar */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Logo kleiner */
+    .logo img {
+        width: 35%;
+    }
+
+    /* Einleitung Text */
+    .einleitung p {
+        width: 90%;
+    }
+
+    /* Termin Button */
+    .termine-button {
+        width: 60%;
+        left: 20%;
+        bottom: 100px;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 3em 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2em;
+        top: 0;
+    }
+
+    .footer-info {
+        right: 0;
+        text-align: center;
+    }
+
+    /* Mobile-Navigation nur wenn aktiv sichtbar */
+    .mobile-nav.active {
+        display: flex;
+    }
+
+/* Über mich – Mobile Fix */
+.uebermich {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3em 1.5em;
+    gap: 20px;
+}
+
+.uebermich img {
+    width: 80%;
+    max-width: 300px;
+}
+
+.uebermich p {
+    width: 100%;
+    margin-top: 10px;
+    position: static;
+}
+
+/* Terminseite – Mobile */
+.termine-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.termin-box {
+    width: 80%;
+}
+
+/* Kontaktseite – Mobile */
+.kontakt-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.kontakt-info,
+.kontakt-formular {
+    width: 90%;
+}
+
+.kontakt-titel {
+    padding-top: 80px;
+}
+/* Kontakt – Google Maps Mobile */
+.kontakt-map {
+    width: 90%;
+    padding-bottom: 60px;
+}
+
+
+/* Fix: Termin-Button auf Mobile */
+.termine-button {
+    bottom: 20px;
+    left: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+/* Anmeldeformular – Mobile */
+.anmeldung-formular {
+    width: 90%;
+}
+
+.anmeldung-titel {
+    padding-top: 80px;
+}
+/* Danke-Seite – Mobile */
+.danke-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.danke-container h1 {
+    font-size: 2em;
+}
+/* 404 Seite – Mobile */
+.error-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.error-container h1 {
+    font-size: 3.5em;
+}
+/* AGB & Impressum – Mobile */
+.agb-container,
+.impressum-container {
+    width: 90%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+}
+
+/* Desktop: mobile-nav immer verstecken, auch wenn .active */
+@media (min-width: 901px) {
+    .mobile-nav {
+        display: none !important;
+    }
+}

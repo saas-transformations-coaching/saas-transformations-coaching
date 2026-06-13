@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/png" href="Images/favcon.png">
+</head>
+
+<body>
+
+<header>
+    <section class="header-links">
+        <section class="logo">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="logo">
+            </a>
+        </section>
+
+        <nav class="desktop-nav">
+            <a href="index.html#uebermich">Über mich</a>
+            <a href="termine.html">Termine</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <nav class="mobile-nav">
+        <a href="index.html#uebermich">Über mich</a>
+        <a href="termine.html">Termine</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+
+<section class="impressum-container">
+    <h1>Impressum</h1>
+
+    <h2>Verantwortlich für den Inhalt</h2>
+    <p>Praxisname<br>
+    Vorname Nachname<br>
+    Strasse Nr.<br>
+    PLZ Ort<br>
+    Schweiz</p>
+
+    <h2>Kontakt</h2>
+    <p>Telefon: 079 xxx xx xx<br>
+    E-Mail: info@deinepraxis.ch</p>
+
+    <h2>Haftungsausschluss</h2>
+    <p>Alle Inhalte dieser Website wurden sorgfältig erstellt. Dennoch kann keine Garantie für Richtigkeit, Vollständigkeit oder Aktualität übernommen werden.</p>
+
+    <h2>Urheberrecht</h2>
+    <p>Alle Texte, Bilder und Inhalte dieser Website unterliegen dem Urheberrecht. Eine Verwendung ohne schriftliche Zustimmung ist nicht gestattet.</p>
+
+    <h2>Datenschutz</h2>
+    <p>Personenbezogene Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.</p>
+</section>
+
+
+<footer>
+    <section class="footer-links">
+        <section class="logo">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="logo">
+            </a>
+        </section>
+
+        <div class="footer-info">
+            <p>Adresse</p>
+            <p>Tel.</p>
+            <p>Email</p>
+        </div>
+
+        <a href="agb.html">AGB</a>
+        <a href="impressum.html">Impressum</a>
+    </section>
+</footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
+hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danke</title>
+    <link rel="stylesheet" href="style.css">
+ <link rel="icon" type="image/png" href="Images/favcon.png">
+</head>
+
+<body>
+
+<header>
+    <section class="header-links">
+        <section class="logo">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="logo">
+            </a>
+        </section>
+
+        <nav class="desktop-nav">
+            <a href="index.html#uebermich">Über mich</a>
+            <a href="termine.html">Termine</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <nav class="mobile-nav">
+        <a href="index.html#uebermich">Über mich</a>
+        <a href="termine.html">Termine</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+
+<section class="danke-container">
+    <h1>Vielen Dank!</h1>
+    <p>Deine Nachricht / Terminbuchung wurde erfolgreich übermittelt.</p>
+    <p>Ich melde mich so schnell wie möglich bei dir.</p>
+
+    <a href="index.html" class="danke-btn">Zurück zur Startseite</a>
+</section>
+
+
+ <footer>
+        <section class="footer-links">
+<section class="logo">
+                <a href="index.html">
+<img src="Images/logo.png" alt="logo">
+</a>
+</section>
+<div class="footer-info">
+<p>Adresse
+</p>
+<p>Tel.</p>
+<p>email</p>
+</div>
+
+    <a href="agb.html">AGB</a>
+    <a href="impressum.html">Impressum</a>
+    </section>
+
+    </footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
+
+hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saas Transformations Coaching</title>
+ <link rel="icon" type="image/png" href="Images/favcon.png">
+
+</head>
+
+<body>
+   <header>
+    <section class="header-links">
+        
+        <!-- Logo bleibt IMMER sichtbar -->
+        <section class="logo">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="logo">
+            </a>
+        </section>
+
+        <!-- Desktop Navigation (nur Laptop) -->
+        <nav class="desktop-nav">
+            <a href="uebermich.html">Über mich</a>
+            <a href="termine.html">Termine</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <!-- Hamburger (nur Mobile/Tablet) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </section>
+
+    <!-- Mobile Navigation (nur Mobile/Tablet) -->
+    <nav class="mobile-nav">
+        <a href="uebermich.html">Über mich</a>
+        <a href="termine.html">Termine</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+
+ <section class="einleitung">
+    <h1 class="einleitung-titel">Willkommen</h1>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi nobis cupiditate ipsam. Dolores quis
+        veritatis doloribus modi repellendus fugiat commodi sit sed? Iusto provident vel recusandae consequatur
+        molestias dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi nobis cupiditate ipsam. Dolores quis
+        veritatis doloribus modi repellendus fugiat commodi sit sed? Iusto provident vel recusandae consequatur
+        molestias dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi nobis cupiditate ipsam. Dolores quis
+        veritatis doloribus modi repellendus fugiat commodi sit sed? Iusto provident vel recusandae consequatur
+        molestias dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi nobis cupiditate ipsam. Dolores quis
+        veritatis doloribus modi repellendus fugiat commodi sit sed? Iusto provident vel recusandae consequatur
+        molestias dolor.</p>
+ </section>
+    
+    <div class="termine-button">
+        <a href="termine.html">
+            <strong>
+        <p>Termin buchen</p>
+        </strong>
+        </a>
+    </div>
+ <section class="qa-section">
+    <h2>Häufige Fragen</h2>
+
+    <div class="qa-item">
+        <button class="qa-question">Was ist Hypnose?</button>
+        <div class="qa-answer">
+            <p>Hypnose ist ein natürlicher Zustand tiefer Entspannung, in dem dein Unterbewusstsein besser erreichbar ist.</p>
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <button class="qa-question">Ist Hypnose gefährlich?</button>
+        <div class="qa-answer">
+            <p>Nein. Hypnose ist sicher, sanft und du bleibst jederzeit bei vollem Bewusstsein.</p>
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <button class="qa-question">Wie läuft eine Sitzung ab?</button>
+        <div class="qa-answer">
+            <p>Wir starten mit einem Gespräch, danach folgt eine geführte Entspannung und die eigentliche Hypnose.</p>
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <button class="qa-question">Für wen eignet sich Hypnose?</button>
+        <div class="qa-answer">
+            <p>Für alle, die Stress reduzieren, Blockaden lösen oder neue Gewohnheiten entwickeln möchten.</p>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <section class="footer-links">
+<section class="logo">
+                <a href="index.html">
+<img src="Images/logo.png" alt="logo">
+</a>
+</section>
+<div class="footer-info">
+<p>Adresse
+</p>
+<p>Tel.</p>
+<p>email</p>
+</div>
+
+    <a href="agb.html">AGB</a>
+    <a href="impressum.html">Impressum</a>
+    </section>
+
+    </footer>
+    <script>
+const questions = document.querySelectorAll('.qa-question');
+
+questions.forEach(q => {
+    q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        answer.classList.toggle('open');
+    });
+});
+</script>
+
+    <script>
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
+
+hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+});
+</script>
+
+</body>
+
+</html>
