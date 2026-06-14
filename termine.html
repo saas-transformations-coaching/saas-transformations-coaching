@@ -46,33 +46,37 @@
 </header>
 
 
-<section class="termine-titel">
-    <h1>Termin buchen</h1>
+<section class="anmeldung-titel">
+    <h2>Termin Anmeldung – 60 Minuten</h2>
+    <p class="anmeldung-sub">Bitte fülle das Formular aus. Ich melde mich telefonisch bei dir.</p>
 </section>
 
-<section class="termine-container">
+<section class="anmeldung-container">
+    <form class="anmeldung-formular" action="https://formsubmit.co/sandra@medianero.com" method="POST">
 
-    <div class="termin-box">
-        <h2>Erstsitzung</h2>
-        <p>60–90 Minuten<br>Ideal für den Einstieg.</p>
-       <a href="anmeldung.html?typ=erstsitzung" class="termin-btn">Jetzt buchen</a>
+        <!-- Einstellungen -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://s4ndra81.github.io/saas-transformations-coaching/danke.html">
+        <input type="hidden" name="Termin" value="60 Minuten Sitzung">
 
+        <label>Vorname</label>
+        <input type="text" name="vorname" required>
 
-    </div>
+        <label>Nachname</label>
+        <input type="text" name="nachname" required>
 
-    <div class="termin-box">
-        <h2>Folgesitzung</h2>
-        <p>45–60 Minuten<br>Für weitere Vertiefung.</p>
-      <a href="anmeldung.html?typ=folgesitzung" class="termin-btn">Jetzt buchen</a>
-    </div>
+        <label>E-Mail</label>
+        <input type="email" name="email" required>
 
-    <div class="termin-box">
-        <h2>Intensiv‑Session</h2>
-        <p>90 Minuten<br>Für tiefere Themen.</p>
-<a href="anmeldung.html?typ=intensiv" class="termin-btn">Jetzt buchen</a>
-    </div>
+        <label>Telefonnummer</label>
+        <input type="tel" name="telefon" required>
 
+        <button type="submit" class="anmeldung-btn">Anmeldung senden</button>
+    </form>
 </section>
+
+
+
 
 
  <footer>

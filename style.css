@@ -348,50 +348,7 @@ button:hover,
     padding-bottom: 100px;
 }
 
-/* Anmeldeformular */
-.anmeldung-titel {
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 40px;
-    color: #0E3A40;
-}
 
-.anmeldung-container {
-    display: flex;
-    justify-content: center;
-    padding: 3em 2em 8em 2em;
-}
-
-.anmeldung-formular {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.anmeldung-formular input,
-.anmeldung-formular select,
-.anmeldung-formular textarea {
-    padding: 12px;
-    border-radius: 10px;
-    border: 2px solid #0E3A40;
-    font-size: 1em;
-}
-
-.anmeldung-formular textarea {
-    height: 150px;
-    resize: none;
-}
-
-.anmeldung-btn {
-    background-color: #0E3A40;
-    color: #e9d78c;
-    padding: 12px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
 
 /* Danke-Seite */
 .danke-container {
@@ -473,6 +430,60 @@ button:hover,
     margin-bottom: 10px;
 }
 
+/* Schönes, modernes Anmeldeformular */
+.anmeldung-titel {
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    color: #0E3A40;
+}
+
+.anmeldung-sub {
+    margin-top: -10px;
+    font-size: 1.1em;
+    color: #0E3A40;
+    opacity: 0.8;
+}
+
+.anmeldung-container {
+    display: flex;
+    justify-content: center;
+    padding: 2em 2em 6em 2em;
+}
+
+.anmeldung-formular {
+    width: 40%;
+    background: #ffffff;
+    padding: 2.5em;
+    border-radius: 25px;
+    border: 2px solid #0E3A40;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.anmeldung-formular input {
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #0E3A40;
+    font-size: 1em;
+}
+
+.anmeldung-btn {
+    background-color: #0E3A40;
+    color: #e9d78c;
+    padding: 14px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1.1em;
+}
+
+.anmeldung-btn:hover {
+    opacity: 0.7;
+}
 
 
 
@@ -609,14 +620,7 @@ button:hover,
     width: 70%;
     margin: 0 auto;
 }
-/* Anmeldeformular – Mobile */
-.anmeldung-formular {
-    width: 90%;
-}
 
-.anmeldung-titel {
-    padding-top: 80px;
-}
 /* Danke-Seite – Mobile */
 .danke-container {
     padding-top: 120px;
@@ -642,7 +646,14 @@ button:hover,
     padding-top: 120px;
     padding-bottom: 120px;
 }
+ .anmeldung-formular {
+        width: 90%;
+        padding: 2em;
+    }
 
+    .anmeldung-titel {
+        padding-top: 100px;
+    }
 
 }
 
