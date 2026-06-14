@@ -46,40 +46,41 @@
 </header>
 
 
-<section class="kontakt-titel">
-    <h1>Kontakt</h1>
-</section>
 
+
+<section class="kontakt-titel">
+    <h2>Kontakt</h2>
+    <p>Schreib mir eine Nachricht, ich melde mich so schnell wie möglich bei dir.</p>
+</section>
 
 <section class="kontakt-container">
-
     <div class="kontakt-info">
-        <h2>So erreichst du mich</h2>
-        <p><strong>Adresse:</strong><br> Musterstrasse 12<br> 8000 Zürich</p>
-
-        <p><strong>Telefon:</strong><br> 079 123 45 67</p>
-
-        <p><strong>E-Mail:</strong><br> info@hypnosepraxis.ch</p>
+        <p>Du kannst mich per E-Mail oder über das Formular erreichen.</p>
+        <p><strong>E-Mail:</strong> sandra@medianero.com</p>
+        <p><strong>Telefon:</strong> (deine Nummer hier)</p>
     </div>
 
-  <form action="https://formsubmit.co/sandra@medianero.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://github.com/S4ndra81/saas-transformations-coaching">
+    <form class="kontakt-formular" action="https://formsubmit.co/sandra@medianero.com" method="POST">
+        <!-- Einstellungen -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://s4ndra81.github.io/saas-transformations-coaching/danke.html">
 
-    <label>Name</label>
-    <input type="text" name="name" required>
+        <label>Vorname</label>
+        <input type="text" name="vorname" required>
 
-    <label>E-Mail</label>
-    <input type="email" name="email" required>
+        <label>Nachname</label>
+        <input type="text" name="nachname" required>
 
-    <label>Nachricht</label>
-    <textarea name="message" required></textarea>
+        <label>E-Mail</label>
+        <input type="email" name="email" required>
 
-    <button type="submit">Senden</button>
-</form>
+        <label>Nachricht</label>
+        <textarea name="nachricht" required></textarea>
 
-
+        <button type="submit" class="kontakt-btn">Nachricht senden</button>
+    </form>
 </section>
+
 
 <!-- ⭐ GOOGLE MAPS KARTE ⭐ -->
 <section class="kontakt-map">
